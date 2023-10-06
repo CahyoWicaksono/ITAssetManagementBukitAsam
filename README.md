@@ -1,1 +1,1 @@
-# ITAssetManagementBukitAsam
+IT asset management (ITAM) adalah praktik pengelolaan asset di siklus hidupnya. Nilai sebuah asset biasanya ditentukan secara finansial. Saat sebuah organisasi menghabiskan uang untuk mendapatkan komponen, harga dan nilainya krusial dalam memprediksi apakah asset akan mengembalikan nilai dari investasi.
