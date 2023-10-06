@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "531108477472",
+    "firebase_url": "https://manajemen-aset-532b3-default-rtdb.firebaseio.com",
+    "project_id": "manajemen-aset-532b3",
+    "storage_bucket": "manajemen-aset-532b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531108477472:android:1eff6989832e779cec5a45",
+        "android_client_info": {
+          "package_name": "com.example.itassetmanagementptbukitasam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531108477472-al1ikou2l5bk9k83jtvlk4obm3604gls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASlypROpdS6A8XhnhGjElXAP-exmThTlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531108477472-al1ikou2l5bk9k83jtvlk4obm3604gls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

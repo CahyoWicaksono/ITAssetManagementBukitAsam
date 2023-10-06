@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bukiasam"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to\nIT Asset Management"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.02"
+            android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iAsset is a low-cost solution which works on low-cost devices. It automatically recognizes and categorizes assets using artificial intelligence, thus saving time. With iAsset, adding an asset to an organizations’ inventory takes less than a minute."
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Features:\n
+    •\tAssigned Asset-User Security Scheme. \t\n
+    •\tQR Generation and QR Code Scanner.\n
+    •\tMaintenance Planning.\n
+    •\tRequesting and Reporting Asset.\n
+    •\tAnalytics\n
+    •\tData Security and User Authentication\n"
+        android:letterSpacing="0.02"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/second_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/form13"
+        android:drawableTint="@color/blue"
+        android:text="Get Started Now!"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:textSize="16dp" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

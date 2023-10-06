@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/svEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp">
+
+                <ImageView
+                    android:id="@+id/backinAsset"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_circle_radius"
+                    android:backgroundTint="@color/grey_5"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_back_white"
+                    app:tint="@color/red" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Create Repair Report"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp">
+
+                        <EditText
+                            android:id="@+id/etNameOfficerRepair"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:hint="Name"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etEmailOfficerRepair"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="Gmail"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etStatusRepair"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:hint="Status Repair"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair3"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair1"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair3"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair1"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair4"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair2"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair4"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair2"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair5"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair3"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair5"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair3"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair6"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair4"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair6"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair4"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair7"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair5"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair7"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair5"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair8"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair6"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair8"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair6"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair9"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair7"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair9"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair7"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair7"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair10"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair8"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair10"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair8"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair8"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair11"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair9"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair11"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair9"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair9"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair12"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair10"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair12"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair10"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair10"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair13"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair11"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair13"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair11"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair11"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair14"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair12"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair14"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair12"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair12"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair15"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair13"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair15"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair13"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair13"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair16"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair14"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair16"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair14"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair14"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair17"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair15"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair17"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair15"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair15"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair18"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair16"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair18"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair16"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair16"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair19"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair17"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair19"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair17"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair17"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair20"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair18"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair20"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair18"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair18"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair21"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair19"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair21"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair19"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair19"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair22"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair20"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair22"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair20"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair20"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerRepair23"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlRepair21"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerRepair23"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiRepair21"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlRepair21"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/btnPrintRepair"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:background="@drawable/form13"
+                        android:drawableTint="@color/blue"
+                        android:text="Create Report"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

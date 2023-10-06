@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/idRLAset_receiver_safety"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:paddingTop="10dp"
+            android:text="Asset Receiver Detail : "
+            android:textColor="@color/Tex"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/detail"
+            android:background="@color/blue" />
+
+        <LinearLayout
+            android:id="@+id/LN1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+        <TextView
+                android:id="@+id/assetcode"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:paddingTop="10dp"
+                android:text="Asset Name :"
+                android:textColor="@color/Tex"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVAssetName_receiver_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="Asset Name "
+                android:textColor="@color/Tex"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LN2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LN1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/assetname"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:paddingTop="10dp"
+                android:text="Asset Code :"
+                android:textColor="@color/Tex"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVAssetCode_receiver_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="Asset Code "
+                android:textColor="@color/Tex"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LN3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LN2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/supplier"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:paddingTop="10dp"
+                android:text="Division :"
+                android:textColor="@color/Tex"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVType_receiver_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="Division"
+                android:textColor="@color/Tex"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LN5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LN3"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <TextView
+                android:id="@+id/period"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:paddingTop="10dp"
+                android:text="Amount :"
+                android:textColor="@color/Tex"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVAmount_receiver_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="Amount "
+                android:textColor="@color/Tex"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LN6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LN5"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/enduse"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:paddingTop="10dp"
+                android:text="Condition :"
+                android:textColor="@color/Tex"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVDesc_receiver_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="Condition "
+                android:textColor="@color/Tex"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LN7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LN6"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:paddingTop="10dp"
+                android:text="Date :"
+                android:textColor="@color/Tex"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVDate_receiver_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="Date "
+                android:textColor="@color/Tex"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LN6"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/editData_receiver_safety"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/form13"
+                android:backgroundTint="@color/green"
+                android:text="Edit Data"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/DeleteData_receiver_safety"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/form13"
+                android:backgroundTint="@color/red"
+                android:text="Delete Data"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

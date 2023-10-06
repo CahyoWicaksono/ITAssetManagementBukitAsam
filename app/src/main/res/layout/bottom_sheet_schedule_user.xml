@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/idRLSchedule"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:checked="false"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:paddingTop="10dp"
+        android:text="Schedule Detail : "
+        android:textColor="@color/Tex"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/idTVTask_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:drawableLeft="@drawable/ic_task"
+        android:drawableTint="@color/orange"
+        android:padding="4dp"
+        android:text="Task"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/idTVDateSchedule_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVTask_user"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:drawableLeft="@drawable/date"
+        android:drawableTint="@color/blue_light"
+        android:padding="3dp"
+        android:text="Date"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/idTVTimeSchedule_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVDateSchedule_user"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:drawableLeft="@drawable/ic_schedule"
+        android:drawableTint="@color/blue"
+        android:padding="3dp"
+        android:text=" Time"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/idTVLocationSchedule_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVTimeSchedule_user"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:drawableLeft="@drawable/location"
+        android:drawableTint="@color/green"
+        android:padding="3dp"
+        android:text="Location"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/idTVAssetCode_Schedule_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVLocationSchedule_user"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:drawableLeft="@drawable/ic_code"
+        android:drawableTint="@color/red"
+        android:padding="3dp"
+        android:text="Asset Code"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/idTVDeployment_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVAssetCode_Schedule_user"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:drawableLeft="@drawable/date"
+        android:drawableTint="@color/red"
+        android:padding="3dp"
+        android:text="Deployment"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

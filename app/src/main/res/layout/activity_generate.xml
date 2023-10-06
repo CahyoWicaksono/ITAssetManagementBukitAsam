@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/Theme.Design.Light.NoActionBar"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Generate QR Code"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_below="@id/title"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/generate" />
+
+                <TextView
+                    android:id="@+id/message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img1"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="28dp"
+                    android:text="Information"
+                    android:textSize="18dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/RL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/message_text">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:padding="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/RL_curr_pwd"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/form13"
+                            android:backgroundTint="@color/grey_5">
+
+                            <ImageView
+                                android:id="@+id/imageViewCurrPwd"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_info"
+                                app:tint="@color/black" />
+
+                            <EditText
+                                android:id="@+id/text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toEndOf="@id/imageViewCurrPwd"
+                                android:background="@android:color/transparent"
+                                android:hint="enter current Information"
+                                android:inputType="textMultiLine"
+                                android:maxLines="30"
+                                android:padding="6dp"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/generate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/RL_curr_pwd"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/form13"
+                            android:backgroundTint="@color/blue"
+                            android:text="Generate QR Code"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/scanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/generate"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/form13"
+                            android:backgroundTint="@color/blue_light"
+                            android:text="QR Code Scanner"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/download"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/scanner"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/form13"
+                            android:backgroundTint="@color/red"
+                            android:text="Download QR Code"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/RL1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="100dp"
+                    android:background="#c1c1c1"
+                    android:src="@drawable/ic_image_upload" />
+
+
+
+            </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botomNavigationView_generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/blue"
+        app:itemTextColor="@color/blue"
+        android:background="@color/white"
+        app:menu="@menu/toolbar"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:outlineSpotShadowColor="@color/black_20_percent"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

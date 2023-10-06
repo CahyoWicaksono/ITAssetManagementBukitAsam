@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/red"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Saturday"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/red"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Friday"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/red"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Thursday" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/red"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Wednesday"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/red"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Tuesday"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/red"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Monday"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/red"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sunday"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/blue_light"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Time"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/Saturday1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sat1"/>
+            <TextView
+                android:id="@+id/Friday1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Fri1"/>
+            <TextView
+                android:id="@+id/Thursday1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Thu1"
+                />
+            <TextView
+                android:id="@+id/Wednesday1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Wed1"/>
+            <TextView
+                android:id="@+id/Tuesday1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Tue1"/>
+            <TextView
+                android:id="@+id/Monday1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Monday1"/>
+            <TextView
+                android:id="@+id/Sunday1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sunda1"/>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/timeslot1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:text="8:30"/>
+
+                <TextView
+                    android:id="@+id/timeslot2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+
+                    android:textSize="11dp"
+
+                    android:text="10:00"/>
+
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/Saturday2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sat2"/>
+            <TextView
+                android:id="@+id/Friday2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Fri2"/>
+            <TextView
+                android:id="@+id/Thursday2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Thu2"
+                />
+            <TextView
+                android:id="@+id/Wednesday2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Wed2"/>
+            <TextView
+                android:id="@+id/Tuesday2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Tue2"/>
+            <TextView
+                android:id="@+id/Monday2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Monday2"/>
+            <TextView
+                android:id="@+id/Sunday2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sunday2"/>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/timeslot3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:text="10:00"/>
+
+                <TextView
+                    android:id="@+id/timeslot4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="11dp"
+                    android:text="11:30"/>
+
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/Saturday3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sat3"/>
+            <TextView
+                android:id="@+id/Friday3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Fri3"/>
+            <TextView
+                android:id="@+id/Thursday3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Thu3"
+                />
+            <TextView
+                android:id="@+id/Wednesday3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Wed3"/>
+            <TextView
+                android:id="@+id/Tuesday3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Tue3"/>
+            <TextView
+                android:id="@+id/Monday3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Mon3"/>
+            <TextView
+                android:id="@+id/Sunday3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sunday3"/>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+
+
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/timeslot5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:text="11:30"/>
+
+                <TextView
+                    android:id="@+id/timeslot6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="11dp"
+                    android:text="13:00"/>
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/Saturday4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sat4"/>
+            <TextView
+                android:id="@+id/Friday4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Fri4"/>
+            <TextView
+                android:id="@+id/Thursday4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Thu4"
+                />
+            <TextView
+                android:id="@+id/Wednesday4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Wed4"/>
+            <TextView
+                android:id="@+id/Tuesday4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Tue4"/>
+            <TextView
+                android:id="@+id/Monday4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Mon4"/>
+            <TextView
+                android:id="@+id/Sunday4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sunday4"/>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+
+
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/timeslot7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:text="13:30"/>
+                <TextView
+                    android:id="@+id/timeslot8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+
+                    android:textSize="11dp"
+
+                    android:text="15:00"/>
+
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/Saturday5"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sat5"/>
+            <TextView
+                android:id="@+id/Friday5"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Fri5"/>
+            <TextView
+                android:id="@+id/Thursday5"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Thu5"
+                />
+            <TextView
+                android:id="@+id/Wednesday5"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Wed5"/>
+            <TextView
+                android:id="@+id/Tuesday5"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Tue5"/>
+            <TextView
+                android:id="@+id/Monday5"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Mon5"/>
+            <TextView
+                android:id="@+id/Sunday5"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sunday5"/>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+
+
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/timeslot9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+
+
+                    android:textSize="11dp"
+
+                    android:text="15:00"/>
+
+                <TextView
+                    android:id="@+id/timeslot10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+
+                    android:textSize="11dp"
+
+                    android:text="16:30"/>
+
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/Saturday6"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sat6"/>
+            <TextView
+                android:id="@+id/Friday6"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Fri6"/>
+            <TextView
+                android:id="@+id/Thursday6"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Thu6"
+                />
+            <TextView
+                android:id="@+id/Wednesday6"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Wed6"/>
+            <TextView
+                android:id="@+id/Tuesday6"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Tue6"/>
+            <TextView
+                android:id="@+id/Monday6"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Mon6"/>
+            <TextView
+                android:id="@+id/Sunday6"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sunday6"/>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+
+
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/timeslot11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+
+
+                    android:textSize="11dp"
+
+                    android:text="16:30"/>
+
+                <TextView
+                    android:id="@+id/timeslot12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+
+                    android:textSize="11dp"
+
+                    android:text="18:00"/>
+
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/Saturday7"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sat7"/>
+            <TextView
+                android:id="@+id/Friday7"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Fri7"/>
+            <TextView
+                android:id="@+id/Thursday7"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Thu7"
+                />
+            <TextView
+                android:id="@+id/Wednesday7"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Wed7"/>
+            <TextView
+                android:id="@+id/Tuesday7"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Tue7"/>
+            <TextView
+                android:id="@+id/Monday7"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Mon7"/>
+            <TextView
+                android:id="@+id/Sunday7"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:text="Sunday7"/>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+
+
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/timeslot13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+
+
+                    android:textSize="11dp"
+
+                    android:text="18:00"/>
+
+                <TextView
+                    android:id="@+id/timeslot14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:background="#9651E4"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+
+                    android:textSize="11dp"
+
+                    android:text="19:30"/>
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item android:title="Home"
+            android:id="@+id/id_home"
+            android:iconTint="@color/white"
+            android:icon="@drawable/ic_outline_home" />
+
+        <item android:title="QR Code"
+            android:id="@+id/id_code"
+            android:iconTint="@color/white"
+            android:icon="@drawable/ic_qr_code" />
+
+        <item android:title="Profile"
+            android:id="@+id/id_profile"
+            android:iconTint="@color/white"
+            android:icon="@drawable/ic_outline_supervised_user" />
+
+
+</menu>

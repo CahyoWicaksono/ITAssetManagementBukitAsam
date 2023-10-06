@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="10dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:theme="@style/Theme.Design.Light.NoActionBar"
+                app:cardCornerRadius="@dimen/height_10"
+                android:background="@drawable/form"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/RL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/LN1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/maintenancecode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Asset Code   :"
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/kode_aset_lokasi_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:text="Asset Code "
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LN2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/LN1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/assetcode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Asset Name :"
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/nama_aset_lokasi_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:text="Asset Name "
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/LN2"
+                        android:background="@color/blue" />
+
+
+                    <LinearLayout
+                        android:id="@+id/LN3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/hrd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:paddingTop="10dp"
+                            android:text="HRD                :"
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lokasi_hrd_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:text="Jumlah "
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LN4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/LN3"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/clinic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Clinic              :"
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lokasi_clinic_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:text="Jumlah "
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/LN5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/LN4"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/oprarional"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Oprational     :"
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lokasi_oprasional_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:text="Jumlah "
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LN6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/LN5"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/Logistik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Logistik         :"
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lokasi_logistik_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:text="Jumlah "
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LN7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/LN6"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/publick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/Tex"
+                            android:text="Publick Relation :"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lokasi_humas_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:text="Jumlah "
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LN8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/LN7"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/Laboratory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Laboratory    :"
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lokasi_lab_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:text="Jumlah "
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LN9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/LN8"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/safety"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Safety            :"
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lokasi_safety_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:text="jumlah "
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LN10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/LN9"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:paddingTop="10dp"
+                            android:text="Status            :"
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/status_lokasi_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:checked="false"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:text="status "
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/LN10"
+                        android:background="@color/blue" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardElevation="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:theme="@style/Theme.Design.Light.NoActionBar"
+                android:background="@drawable/my_violet_background_drawable"
+                android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/RL1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/LN1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/assetcode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:checked="false"
+                                android:gravity="center_vertical"
+                                android:padding="3dp"
+                                android:paddingTop="10dp"
+                                android:text="Name Asset :"
+                                android:textColor="@color/Tex"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_name_asset_receiver_sdm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:checked="false"
+                                android:gravity="center_vertical"
+                                android:padding="3dp"
+                                android:text="Asset Name "
+                                android:textColor="@color/Tex"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/LN2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/LN1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/assetname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:checked="false"
+                                android:gravity="center_vertical"
+                                android:padding="3dp"
+                                android:paddingTop="10dp"
+                                android:text="Asset Code :"
+                                android:textColor="@color/Tex"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_kode_Aset_receiver_sdm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:checked="false"
+                                android:gravity="center_vertical"
+                                android:padding="3dp"
+                                android:text="Asset Name "
+                                android:textColor="@color/Tex"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LN3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/LN2"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/supplier"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:checked="false"
+                                android:gravity="center_vertical"
+                                android:padding="3dp"
+                                android:paddingTop="10dp"
+                                android:text="Division :"
+                                android:textColor="@color/Tex"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_division_receiver_sdm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:checked="false"
+                                android:gravity="center_vertical"
+                                android:padding="3dp"
+                                android:text="Division "
+                                android:textColor="@color/Tex"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/LN3"
+                            android:background="@color/blue" />
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/view"
+                            android:layout_marginTop="10dp"
+                            android:text="Click to view data"
+                            android:textColor="@color/blue" />
+
+
+                    </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+

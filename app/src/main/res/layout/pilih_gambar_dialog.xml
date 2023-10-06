@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:theme="@style/Theme.Design.Light.NoActionBar"
+	android:background="@drawable/card_background" >
+
+	<TextView
+		android:id="@+id/txtFromGalley"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_centerHorizontal="true"
+		android:background="@drawable/text"
+		android:gravity="center_horizontal"
+		android:drawableTop="@drawable/ic_image_upload"
+		android:drawableTint="@color/black_70_percent"
+		android:padding="20dp"
+		android:text="Galeri"
+		android:textSize="18sp" />
+
+	<TextView
+		android:id="@+id/txtFromCamera"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txtFromGalley"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_centerHorizontal="true"
+		android:gravity="center_horizontal"
+		android:padding="20dp"
+		android:drawableTop="@drawable/ic_camera_alt"
+		android:drawableTint="@color/black_70_percent"
+		android:text="Kamera"
+		android:textSize="18sp" />
+	    
+</RelativeLayout>

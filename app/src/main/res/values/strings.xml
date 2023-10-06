@@ -1,0 +1,374 @@
+<resources>
+    <string name="app_name" translatable="false">IAsset</string>
+    <string name="Setting">Setting</string>
+    <string name="sale_button">Sale</string>
+    <string name="editor_activity_title_new_item">Add new item</string>
+    <string name="editor_activity_title_edit_item">Edit item</string>
+    <string name="menu_order_item">Order more</string>
+    <string name="menu_delete_item">Delete item</string>
+    <string name="menu_delete_all_data">Delete all data</string>
+    <string name="phone">Phone</string>
+    <string name="email">E-mail</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Fragments strings -->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="select_snackbar">Please, select one item.</string>
+    <string name="selected">Selected</string>
+
+    <!-- Main Activity strings -->
+    <string name="timetable">TimeTable</string>
+    <string name="ulan_nurymov_gmail_com">ulan.nurymov@gmail.com</string>
+    <string name="seven_days_of_the_week">7 Days of the Week</string>
+    <string name="subject">Subject</string>
+    <string name="field_error">field can not be empty!</string>
+    <string name="time_error">Time field can not be empty!</string>
+    <string name="week">Week</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="school_website">School website</string>
+    <string name="school_website_snackbar">Please, set URL of your school website in settings.</string>
+
+    <string name="add_subject">Add subject</string>
+    <string name="edit_subject">Edit subject</string>
+    <string name="teacher">Teacher</string>
+    <string name="room">Room</string>
+    <string name="time">Time</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="time_to_dialog">To:</string>
+    <string name="time_from_dialog">From:</string>
+    <string name="subject_dialog">Subject:</string>
+    <string name="teacher_dialog">Teacher:</string>
+    <string name="room_dialog">Room:</string>
+    <string name="select_time">Select time</string>
+    <string name="select_color">Select color</string>
+    <string name="choose_time">Choose time</string>
+    <string name="choose_date">Choose date</string>
+    <string name="choose_color">Choose color</string>
+
+    <!-- Homeworks Activity strings -->
+    <string name="title_activity_homeworks">HomeworksActivity</string>
+    <string name="homeworks">Homeworks</string>
+    <string name="select_date">Select date</string>
+    <string name="deadline_dialog">Deadline:</string>
+    <string name="deadline">Deadline</string>
+    <string name="description_dialog">Description:</string>
+    <string name="desctiption">Desctiption</string>
+    <string name="date_error">Date field can not be empty!</string>
+    <string name="edit_homework">Edit homework</string>
+    <string name="add_homework">Add homework</string>
+    <string name="deadline_snackbar">"Deadline field can not be empty!</string>
+    <string name="date">Date</string>
+
+    <!-- Notes Activity strings -->
+    <string name="notes">Notes</string>
+    <string name="title_dialog">Title:</string>
+    <string name="add_note">Add note</string>
+    <string name="edit_note">Edit note</string>
+    <string name="title_error">Title field can not be empty!</string>
+    <string name="title">Title</string>
+    <string name="saved">Saved</string>
+
+    <!-- Teachers Activity strings -->
+    <string name="teachers">Teachers</string>
+    <string name="add_teacher">Add teacher</string>
+    <string name="edit_teacher">Edit teacher</string>
+    <string name="name_dialog">Name:</string>
+    <string name="post_dialog">Post:</string>
+    <string name="phonenumber_dialog">Phone:</string>
+    <string name="email_dialog">Email:</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="post">Post</string>
+
+    <!-- Exams Activity strings -->
+    <string name="exams">Exams</string>
+    <string name="add_exam">Add exam</string>
+    <string name="date_dialog">Date:</string>
+    <string name="time_dialog">Time:</string>
+
+    <!-- Settings Activity strings -->
+    <string name="sevendays_setting">Enable 7 Days of the Week</string>
+    <string name="school_website_setting">Change school website</string>
+    <string name="school_website_setting_summary">Change URL of your school website</string>
+
+    <!-- Notification -->
+    <string name="notification_title">Today\'s lessons</string>
+    <string name="do_not_have_lessons">You do not have lessons!</string>
+
+
+
+    <string name="order_message">You can place an order for this item by phone or e-mail</string>
+    <string name="delete_message">Are you sure you want to procede with the deletion?</string>
+
+    <string name="empty_list_hint">Start adding some items to your inventory</string>
+    <string name="action_add_dummy_data">Add Dummy Data</string>
+    <string name="select_image">Select image</string>
+    <string name="image">Image</string>
+    <string name="unsaved_changes_dialog_msg">There are unsaved changes in the product information. Do you want to continue?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep editing</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="camera_error" />
+    <string name="title_activity_bottomnav">bottomnav</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_home_user">HomeUserActivity</string>
+    <string name="title_activity_user_ui">user_ui</string>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="title_activity_home_admin">HomeAdminActivity</string>
+    <string name="todo">TODO</string>
+    <string name="qr_code">qr_code</string>
+    <string name="enter_your_info">Enter your info</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <!--App Essentials-->
+    <string name="file_provider_authority" translatable="false">com.democompany.demoname.demoname.QRCobaApplication.fileprovider</string>
+    <string name="admob_app_id">ca-app-pub-2863106476035876~9232309458</string>
+    <string name="admob_banner_ad_unit_id">ca-app-pub-2863106476035876/6356038138</string>
+    <string name="admob_test_banner_ad_unit_id">ca-app-pub-2863106476035876/6356038138</string>
+    <string name="admob_test_interstitial_ad_unit_id">ca-app-pub-2863106476035876/3538303103</string>
+    <string name="admob_interstitial_ad_unit_id">ca-app-pub-2863106476035876/3538303103</string>
+
+    <!--Essentials-->
+    <string name="please_wait">Please Wait…</string>
+
+    <!--Dummy-->
+    <string name="lorem_ipsum">All Right Reserved By Demo Company ©2021 </string>
+
+    <!--Home page-->
+    <string name="generate">Generate</string>
+    <string name="history">History</string>
+    <string name="scan">Scan</string>
+    <string name="toolbar_title_generate">Generate QR Code</string>
+    <string name="toolbar_title_scan">Code Scanner</string>
+    <string name="toolbar_title_history">History</string>
+
+    <!--Settings page-->
+    <string name="settings">Settings</string>
+    <string name="play_sound">Play Sound</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="save_history">Save History</string>
+    <string name="copy_to_clipboard">Copy to Clipboard</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!--Generate page-->
+    <string name="hint_enter_your_text">Enter Your Text</string>
+    <string name="error_provide_proper_content_and_type">Please provide proper information before generating code</string>
+    <string name="error_barcode_content_limit">Barcode contents length should be between 1 and 80</string>
+    <string name="error_qrcode_content_limit">QR Code contents length should be between 1 and 1000</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Generated QR Code page-->
+    <string name="toolbar_title_generated_qr_code">Generated QR Code</string>
+    <string name="code_type">Type: %s</string>
+    <string name="content">Content: %s</string>
+    <string name="saved_the_code_successfully">Saved the code successfully</string>
+    <string name="failed_to_save_the_code">failed to save the code</string>
+    <string name="failed_to_share_the_code">failed to share the code</string>
+    <string name="file_name_body">%s_%s</string>
+    <string name="generated_qr_code_already_exists">Generated code already exists in the local storage</string>
+    <string name="share_code_using">Share code using…</string>
+
+    <!--Scan page-->
+    <string name="flash">Flash</string>
+    <string name="scan_gallery">Scan Gallery</string>
+    <string name="error_occured_while_scanning">Error occurred while scanning</string>
+    <string name="error_could_not_load_the_image">Could not load the image</string>
+    <string name="error_did_not_find_any_content">Did not find any content. Try again with different image</string>
+
+    <!--Scan result page-->
+    <string name="toolbar_title_scan_result">Scan Result</string>
+    <string name="open_in_browser">Open in browser</string>
+    <string name="created_time">Created Time: %s</string>
+    <string name="scanned_qr_code_content">Scanned QR code content</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+
+    <!--History page-->
+    <string name="code_scan">%s Scan</string>
+    <string name="no_item">No Data Found</string>
+
+    <!--Picked image from gallery page-->
+    <string name="get_value">Get value</string>
+    <string name="toolbar_title_uploaded_image">Uploaded Image</string>
+    <string name="dolor_sit_amet">A Product Of IntTech Limited</string>
+    <string name="app_version_v1_1">App Version : v1.0.0</string>
+    <string name="something_wrong">Something went wrong</string>
+    <string name="generate_bar_code">Generate bar Code</string>
+
+    <string name="title_activity_scan_qr_code">Scan</string>
+    <string name="qc_code_close">Close</string>
+    <string name="qr_code_select_picture">Picture</string>
+    <string name="qr_code_open_flash_light">Open flash light</string>
+    <string name="qr_code_close_flash_light">Close Flash Light</string>
+    <string name="qr_code_auto_scan_notification">Position QR Code</string>
+    <string name="qr_code_notification">Notification</string>
+    <string name="qr_code_camera_not_open">Could not open your camera</string>
+    <string name="qr_code_positive_button_know">OK</string>
+    <string name="qr_code_positive_button_confirm">Confirm</string>
+    <string name="qr_code_could_not_read_qr_code_from_picture">Could not read your image.Try another image~</string>
+    <string name="qr_code_could_not_read_qr_code_from_scanner">Sorry, could not open scan content</string>
+    <string name="qr_code_camera_not_found">Could not detect camera</string>
+
+    <string-array name="type_string">
+        <item>QR Code</item>
+        <item>Barcode</item>
+        <item>Data Matrix</item>
+        <item>PDF 417</item>
+        <item>AZTEC</item>
+    </string-array>
+
+    <string-array name="type_access">
+        <item>Admin</item>
+        <item>User</item>
+    </string-array>
+
+    <string name="database_url">place your firebase_url value here</string>
+    <string name="firebase_api">place current_key value here</string>
+    <string name="firebase_application_id">place mobilesdk_app_id value here</string>
+    <string name="google_maps_api">place google maps api key here</string>
+
+    <string name="type_prompt">Select Type</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="asset_information">The IT assets in question include the maintenance of hardware (hardware) and software (software) assets\n.  The purpose of this study is to analyze and design an IT asset management information system for recording history maintenance.  Why is IT Asset Management Important?
+ An Organization Delivers Value By Leveraging Its Assets.  So it becomes important to keep those assets up and running; \n ITAM Help In This But For IT Assets.
+ Some of the Main Goals of IT Asset Management Are\n:
+ 1. Helping Organizations To Create Asset Inventory.
+ 2. Provides Visibility And Control Over IT Assets.
+ 3. Drive Business Value By Capturing Asset Data And Reducing Waste.
+ 4. Avoid Buying Unnecessary Assets And Make The Best Of Existing Assets.
+ 5. Assistance In Tracking Licensed Use of Purchased Software.  Thus Helping In Managing Costs.
+ 6. ITAM Improves Organizational Understanding About Its Business Values.</string>
+
+    <string-array name="menu_type">
+    <item>Select Status</item>
+    <item>Success</item>
+        <item>Pending</item>
+    <item>Failed</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Select Criteria</item>
+        <item>used</item>
+        <item>not used</item>
+
+    </string-array>
+
+    <string-array name="Condition">
+        <item>Condition</item>
+        <item>Worthy</item>
+        <item>Not Feasible</item>
+    </string-array>
+
+    <string-array name="Access">
+
+        <item>Select Your Access</item>
+        <item>IT Support</item>
+        <item>Officer</item>
+        <item>Work Unit</item>
+        <item>Manager</item>
+
+    </string-array>
+
+    <string-array name="Division">
+        <item>Select Your Division</item>
+        <item>HRD</item>
+        <item>Logistic</item>
+        <item>Publick Relation</item>
+        <item>Oprational</item>
+        <item>Clinic</item>
+        <item>Laboratory</item>
+        <item>Safety</item>
+    </string-array>
+
+
+    <string-array name="menu_spinner">
+    <item>Select Asset</item>
+        <item>Empity</item>
+        <item>Printer Ink Jet</item>
+        <item>Printer Laser Jet</item>
+        <item>Printer Dot MATRIX</item>
+        <item>Printer Termal</item>
+        <item>Printer Plotter</item>
+        <item>Scanner </item>
+        <item>Monitor</item>
+        <item>CCTV</item>
+        <item>Wifi</item>
+        <item>Router</item>
+        <item>Hub</item>
+        <item>Laptop</item>
+        <item>Computer</item>
+        <item>UPS</item>
+        <item>Proyektor </item>
+        <item>Photocopy Machine</item>
+        <item>Unifi Controler</item>
+        <item>Server</item>
+        <item>Deskbook </item>
+        <item>Personal Digital Assistant </item>
+        <item>Tablet </item>
+
+
+</string-array>
+    <string-array name="header_title">
+        <item></item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+    </string-array>
+
+    <string-array name="days">
+        <item >Mon</item>
+        <item >Tue</item>
+        <item >Wed</item>
+        <item >Thu</item>
+        <item >Fri</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+</resources>

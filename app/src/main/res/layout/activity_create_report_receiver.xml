@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/svEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp">
+
+                <ImageView
+                    android:id="@+id/backinAsset"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_circle_radius"
+                    android:backgroundTint="@color/grey_5"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_back_white"
+                    app:tint="@color/red" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Create Receiver Report"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp">
+
+                        <EditText
+                            android:id="@+id/etNameOfficerReceiver"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:hint="Name"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etEmailReceiver"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="Gmail"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etStatusReceiver"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:hint="Status Transfer"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver3"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver1"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver3"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver1"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver4"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver2"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver4"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver2"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver5"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver3"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver5"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver3"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver6"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver4"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver6"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver4"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver7"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver5"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver7"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver5"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver8"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver6"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver8"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver6"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver9"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver7"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver9"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver7"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver7"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver10"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver8"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver10"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver8"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver8"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver11"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver9"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver11"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver9"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver9"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver12"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver10"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver12"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver10"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver10"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver13"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver11"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver13"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver11"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver11"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver14"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver12"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver14"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver12"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver12"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver15"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver13"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver15"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver13"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver13"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver16"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver14"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver16"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver14"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver14"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver17"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver15"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver17"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver15"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver15"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver18"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver16"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver18"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver16"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver16"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver19"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver17"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver19"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver17"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver17"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver20"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver18"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver20"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver18"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver18"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver21"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver19"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver21"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver19"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver19"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver22"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver20"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver22"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver20"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver20"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/itemSpinnerAssetReceiver23"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:entries="@array/menu_spinner"
+                            android:spinnerMode="dropdown" />
+
+                        <EditText
+                            android:id="@+id/etJmlMainReceiver21"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@+id/itemSpinnerAssetReceiver23"
+                            android:ems="10"
+                            android:hint="Total"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etDivisiReceiver21"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/etJmlMainReceiver21"
+                            android:hint="Division"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/btnPrintReceiver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:background="@drawable/form13"
+                        android:drawableTint="@color/blue"
+                        android:text="Create Report"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

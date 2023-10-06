@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Design.Light.NoActionBar"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_40">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="QR Code Scanner"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_below="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="30dp"
+                android:text="Place QR Code inside the frame to scan. Please avoid shake to get result quickly."
+                android:textColor="#737373"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imgview2"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_below="@id/txt"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/scan" />
+
+
+            <ImageView
+                android:id="@+id/Scan"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/imgview2"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_circle_radius"
+                android:backgroundTint="@color/blue_light"
+                android:padding="10dp"
+                android:src="@drawable/ic_qr_code_scanner"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Scan QR Code Now"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/Scan"
+                android:textColor="#000" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botomNavigation_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/white"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/blue_light"
+        app:itemTextColor="@color/blue_light"
+        android:background="@drawable/bg_rounded_top"
+        app:menu="@menu/toolbar"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:outlineSpotShadowColor="@color/black_20_percent"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

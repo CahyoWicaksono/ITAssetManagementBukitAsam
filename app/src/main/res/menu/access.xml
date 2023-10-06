@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="IT Support"
+        android:id="@+id/id_it"
+        android:iconTint="@color/white" />
+
+    <item android:title="Work Unit"
+        android:id="@+id/id_work"
+        android:iconTint="@color/white"/>
+
+    <item android:title="HRD"
+        android:id="@+id/id_sdm"
+        android:iconTint="@color/white" />
+
+    <item android:title="Publick Relation"
+        android:id="@+id/id_lab"
+        android:iconTint="@color/white" />
+
+    <item android:title="Logistic"
+        android:id="@+id/id_logistic"
+        android:iconTint="@color/white" />
+
+    <item android:title="Safety"
+        android:id="@+id/id_safety"
+        android:iconTint="@color/white" />
+
+    <item android:title="Clinic"
+        android:id="@+id/id_clinic"
+        android:iconTint="@color/white" />
+
+    <item android:title="Security"
+        android:id="@+id/id_security"
+        android:iconTint="@color/white" />
+
+
+    <item android:title="Manager"
+        android:id="@+id/id_manager"
+        android:iconTint="@color/white" />
+
+
+</menu>

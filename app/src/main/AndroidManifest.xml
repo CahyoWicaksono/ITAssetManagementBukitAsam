@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.itassetmanagementptbukitasam">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="com.android.hardware.Camera.autofocus" />
+    <uses-feature android:name="com.android.hardware.Camera" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_start"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_start"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        tools:targetApi="32">
+
+        <activity android:name=".OtherMenu.SignInActivity" />
+        <activity android:name=".OtherMenu.MapsActivity" />
+        <activity android:name=".ListDataUser.ViewAssetActivity" />
+        <activity android:name=".OtherMenu.ScondStartActivity" />
+        <activity android:name=".Account.UpdateEmailUserActivity" />
+        <activity android:name=".Account.UpdateEmailActivity" />
+        <activity android:name=".User.ProfileUserActivity" />
+        <activity android:name=".Admin.ProfileAdminActivity" />
+        <activity android:name=".Account.DeleteAcountActivity" />
+        <activity android:name=".Account.DeleteUserAcountActivity" />
+        <activity android:name=".Account.LoginUserActivity" />
+        <activity android:name=".OtherMenu.AccessActivity" />
+
+        <activity android:name=".Admin.GenerateCode" />
+        <activity android:name=".Admin.Schedule" />
+
+
+
+        <activity android:name=".AddData.OtherAddData.AddMaintainActivity" />
+        <activity android:name=".AddData.OtherAddData.AddOfficerActivity" />
+        <activity android:name=".AddData.OtherAddData.AddTransferActivity" />
+        <activity android:name=".AddData.OtherAddData.AddDamageActivity" />
+        <activity android:name=".AddData.OtherAddData.AddRepairActivity" />
+        <activity android:name=".AddData.OtherAddData.AddSoftwareActivity" />
+        <activity android:name=".AddData.AddWithdrawal.AddWithdrawalActivity" />
+        <activity android:name=".AddData.AddWithdrawal.AddWithdrawalSDMActivity"/>
+        <activity android:name=".AddData.AddWithdrawal.AddWithdrawalOprationalActivity"/>
+        <activity android:name=".AddData.AddWithdrawal.AddWithdrawalLogisticActivity"/>
+        <activity android:name=".AddData.AddWithdrawal.AddWithdrawalSafetyActivity"/>
+        <activity android:name=".AddData.AddWithdrawal.AddWithdrawalLabActivity"/>
+        <activity android:name=".AddData.AddWithdrawal.AddWithdrawalHumasActivity"/>
+
+
+        <activity android:name=".ChangeData.EditWithdrawal.EditWithdrawalSDM"/>
+        <activity android:name=".ChangeData.EditWithdrawal.EditWithdrawalHumas"/>
+        <activity android:name=".ChangeData.EditWithdrawal.EditWithdrawalSafety"/>
+        <activity android:name=".ChangeData.EditWithdrawal.EditWithdrawalOprational"/>
+        <activity android:name=".ChangeData.EditWithdrawal.EditWithdrawalLogistic"/>
+        <activity android:name=".ChangeData.EditWithdrawal.EditWithdrawalLab"/>
+
+
+        <activity android:name=".ListData.Withdrawal.List.ViewWithdrawalActivity"/>
+        <activity android:name=".ListData.Withdrawal.List.ViewWithdrawalHumasActivity"/>
+        <activity android:name=".ListData.Withdrawal.List.ViewWithdrawalLabActivity"/>
+        <activity android:name=".ListData.Withdrawal.List.ViewWithdrawalLogisticActivity"/>
+        <activity android:name=".ListData.Withdrawal.List.ViewWithdrawalOprationalActivity"/>
+        <activity android:name=".ListData.Withdrawal.List.ViewWithdrawalSafetyActivity"/>
+        <activity android:name=".ListData.Withdrawal.List.ViewWithdrawalSDMActivity"/>
+
+        <activity android:name=".ListData.Withdrawal.List.WithdrawalLogisticActivity"/>
+
+
+        <activity android:name=".ListData.AssetData.AssetDataActivity" />
+        <activity android:name=".ListData.OtherData.OfficerActivity" />
+        <activity android:name=".ListData.OtherData.DamageActivity" />
+        <activity android:name=".ListData.OtherData.TransferActivity" />
+        <activity android:name=".ListData.OtherData.MaintenanceActivity" />
+        <activity android:name=".ListData.OtherData.RepairActivity" />
+        <activity android:name=".ListData.Withdrawal.List.WithdrawalActivity" />
+        <activity android:name=".ListData.OtherData.SoftwareActivity" />
+        <activity android:name=".ListData.OtherData.ScheduleActivity" />
+        <activity android:name=".AddData.OtherAddData.ScheduleMaintenanceActivity" />
+
+
+        <activity android:name=".ChangeData.EditAsset.EditAsset"/>
+        <activity android:name=".ChangeData.EditWithdrawal.EditWithdrawal"/>
+        <activity android:name=".ChangeData.OtherEdit.EditTransfer"/>
+        <activity android:name=".ChangeData.OtherEdit.EditOfficer"/>
+        <activity android:name=".ChangeData.OtherEdit.EditSoftware"/>
+        <activity android:name=".ChangeData.OtherEdit.EditRepair"/>
+        <activity android:name=".ChangeData.OtherEdit.EditDamage"/>
+        <activity android:name=".ChangeData.OtherEdit.EditMaintenance"/>
+        <activity android:name=".Admin.UpdateProfileAdminActivity"/>
+        <activity android:name=".Account.UpdateProfileUserActivity"/>
+        <activity android:name=".Account.ChangePasswordActivity"/>
+
+        <activity android:name=".ListDataUser.DamageUserActivity" />
+        <activity android:name=".ListDataUser.MaintenanceUserActivity" />
+        <activity android:name=".ListDataUser.RepairUserActivity" />
+        <activity android:name=".ListDataUser.ScheduleUserActvity" />
+
+        <activity android:name=".AddData.AddDataUser.AddMaintenanceUser" />
+        <activity android:name=".ChangeData.OtherEdit.EditMaintenanceUser" />
+        <activity android:name=".AddData.AddDataUser.AddDamageUser" />
+        <activity android:name=".ChangeData.OtherEdit.EditDamageUser" />
+        <activity android:name=".ChangeData.OtherEdit.EditRepairUser" />
+        <activity android:name=".User.QRCodeActivity" />
+        <activity android:name=".OtherMenu.ForgotActivity" />
+
+        <activity android:name=".Report.ReportDivision.ReportUser"/>
+
+        <activity android:name=".Logistic.HomeLogisticActivity"/>
+        <activity android:name=".SDM.HomeSDM"/>
+        <activity android:name=".Oprational.HomeOprational"/>
+        <activity android:name=".Manager.HomeManager"/>
+        <activity android:name=".Clinic.HomeClinic"/>
+        <activity android:name=".Laboratory.LabHome"/>
+        <activity android:name=".Safety.HomeSafety"/>
+        <activity android:name=".Humas.HomeHumas"/>
+
+        <activity android:name=".Admin.ReceiverDivisionActivity"/>
+        <activity android:name=".ListData.Receiver.ListReceiver.ReceiverActivity"/>
+        <activity android:name=".ListData.Receiver.ListReceiver.ReceiverHumasActivity"/>
+        <activity android:name=".ListData.Receiver.ListReceiver.ReceiverSDMActivity"/>
+        <activity android:name=".ListData.Receiver.ListReceiver.ReceiverSafetyActivity"/>
+        <activity android:name=".ListData.Receiver.ListReceiver.ReceiverOprationalActivity"/>
+        <activity android:name=".ListData.Receiver.ListReceiver.ReceiverClnicActivity"/>
+
+        <activity android:name=".ListData.Receiver.ListReceiver.ViewReceiverActivity"/>
+        <activity android:name=".ListData.Receiver.ListReceiver.ViewReceiverClnicActivity"/>
+        <activity android:name=".ListData.Receiver.ListReceiver.ViewReceiverHumasActivity"/>
+        <activity android:name=".ListData.Receiver.ListReceiver.ViewReceiverLabActivity"/>
+        <activity android:name=".ListData.Receiver.ListReceiver.ViewReceiverOprationalActivity"/>
+        <activity android:name=".ListData.Receiver.ListReceiver.ViewReceiverSafetyActivity"/>
+        <activity android:name=".ListData.Receiver.ListReceiver.ViewReceiverSDMActivity"/>
+
+        <activity android:name=".AddData.AddReceiver.AddReceiver"/>
+        <activity android:name=".AddData.AddReceiver.AddReceiverClinic"/>
+        <activity android:name=".AddData.AddReceiver.AddReceiverHumas"/>
+        <activity android:name=".AddData.AddReceiver.AddReceiverLab"/>
+        <activity android:name=".AddData.AddReceiver.AddReceiverOprational"/>
+        <activity android:name=".AddData.AddReceiver.AddReceiverSafety"/>
+        <activity android:name=".AddData.AddReceiver.AddReceiverSDM"/>
+
+
+        <activity android:name=".ChangeData.Editreceiver.EditReceiver"/>
+        <activity android:name=".ChangeData.Editreceiver.EditReceiverClinic"/>
+        <activity android:name=".ChangeData.Editreceiver.EditReceiverHumas"/>
+        <activity android:name=".ChangeData.Editreceiver.EditReceiverLab"/>
+        <activity android:name=".ChangeData.Editreceiver.EditReceiverOprational"/>
+        <activity android:name=".ChangeData.Editreceiver.EditReceiverSafety"/>
+        <activity android:name=".ChangeData.Editreceiver.EditReceiverSDM"/>
+
+        <activity android:name=".Admin.RequestDivisionActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.RequestSDMActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.RequestSafetyActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.RequestOprationalActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.RequestActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.RequestLabActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.RequestHumasActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.RequestClinicActivity"/>
+
+        <activity android:name=".AddData.AddRequest.AddRequest"/>
+        <activity android:name=".AddData.AddRequest.AddRequestClinic"/>
+        <activity android:name=".AddData.AddRequest.AddRequestHumas"/>
+        <activity android:name=".AddData.AddRequest.AddRequestLab"/>
+        <activity android:name=".AddData.AddRequest.AddRequestOprational"/>
+        <activity android:name=".AddData.AddRequest.AddRequestSafety"/>
+        <activity android:name=".AddData.AddRequest.AddRequestSDM"/>
+
+        <activity android:name=".ChangeData.EditRequest.EditRequest"/>
+        <activity android:name=".ChangeData.EditRequest.EditRequestClinic"/>
+        <activity android:name=".ChangeData.EditRequest.EditRequestSafety"/>
+        <activity android:name=".ChangeData.EditRequest.EditRequestHumas"/>
+        <activity android:name=".ChangeData.EditRequest.EditRequestLab"/>
+        <activity android:name=".ChangeData.EditRequest.EditRequestOprational"/>
+        <activity android:name=".ChangeData.EditRequest.EditRequestSDM"/>
+
+        <activity android:name=".ListData.Request.ListRequest.ViewRequestActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.ViewClinicRequestActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.ViewSafetyRequestActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.ViewHumasRequestActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.ViewOprationalRequestActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.ViewSDMRequestActivity"/>
+        <activity android:name=".ListData.Request.ListRequest.ViewLabRequestActivity"/>
+
+        <activity android:name=".Admin.ResponseDivision"/>
+        <activity android:name=".ListData.Response.List.ResponseClinicActivity"/>
+        <activity android:name=".ListData.Response.List.ResponseHumasActivity"/>
+        <activity android:name=".ListData.Response.List.ResponsesSafetyActivity"/>
+        <activity android:name=".ListData.Response.List.ResponseSDMActivity"/>
+        <activity android:name=".ListData.Response.List.ResponseLogisticActivity"/>
+        <activity android:name=".ListData.Response.List.ResponseOprationalActivity"/>
+        <activity android:name=".ListData.Response.List.ResponseLabActivity"/>
+
+        <activity android:name=".ListData.Response.List.ResponseViewClinicActivity"/>
+        <activity android:name=".ListData.Response.List.ResponseViewHumasActivity"/>
+        <activity android:name=".ListData.Response.List.ResponsesViewSafetyActivity"/>
+        <activity android:name=".ListData.Response.List.ResponseViewSDMActivity"/>
+        <activity android:name=".ListData.Response.List.ResponseViewLogisticActivity"/>
+        <activity android:name=".ListData.Response.List.ResponseViewOprationalActivity"/>
+        <activity android:name=".ListData.Response.List.ResponseViewLabActivity"/>
+
+        <activity android:name=".AddData.AddResponse.AddResponseClinic"/>
+        <activity android:name=".AddData.AddResponse.AddResponseHumas"/>
+        <activity android:name=".AddData.AddResponse.AddResponseSafety"/>
+        <activity android:name=".AddData.AddResponse.AddResponseSDM"/>
+        <activity android:name=".AddData.AddResponse.AddResponseLogistic"/>
+        <activity android:name=".AddData.AddResponse.AddResponseOprational"/>
+        <activity android:name=".AddData.AddResponse.AddResponseLab"/>
+
+
+        <activity android:name=".ChangeData.Edit.EditResponseClinic"/>
+        <activity android:name=".ChangeData.Edit.EditResponseHumas"/>
+        <activity android:name=".ChangeData.Edit.EditResponseSafety"/>
+        <activity android:name=".ChangeData.Edit.EditResponseSDM"/>
+        <activity android:name=".ChangeData.Edit.EditResponseLogistic"/>
+        <activity android:name=".ChangeData.Edit.EditResponseOprational"/>
+        <activity android:name=".ChangeData.Edit.EditResponseLab"/>
+        <activity android:name=".Admin.RequestTakingActivity"/>
+        <activity android:name=".Admin.ReceiverAssetActivity"/>
+
+        <activity android:name=".ListData.AssetData.AssetDataClinicActivity"/>
+        <activity android:name=".ListData.AssetData.AssetDataHumasActivity"/>
+        <activity android:name=".ListData.AssetData.AssetDataLogisticActivity"/>
+        <activity android:name=".ListData.AssetData.AssetDataSafetyActivity"/>
+        <activity android:name=".ListData.AssetData.AssetDataLabActivity"/>
+        <activity android:name=".ListData.AssetData.AssetDataSDMActivity"/>
+
+        <activity android:name=".AddData.AddAsset.AddAssetActivity"/>
+        <activity android:name=".AddData.AddAsset.AddAssetClinicActivity"/>
+        <activity android:name=".AddData.AddAsset.AddAssetHumasActivity"/>
+        <activity android:name=".AddData.AddAsset.AddAssetLabActivity"/>
+        <activity android:name=".AddData.AddAsset.AddAssetLogisticActivity"/>
+        <activity android:name=".AddData.AddAsset.AddAssetOprationalActivity"/>
+        <activity android:name=".AddData.AddAsset.AddAssetSafetyActivity"/>
+        <activity android:name=".AddData.AddAsset.AddAssetSDMActivity"/>
+
+
+        <activity android:name=".Report.ReportDivision.ReportManager"/>
+
+        <activity android:name=".Report.ReportDivision.ReportAdmin"/>
+        <activity android:name=".Report.ReportDivision.ReportLogistic"/>
+
+        <activity android:name=".Report.AddReport.TransferReportActivity"/>
+        <activity android:name=".Report.AddReport.AssetReportActivity"/>
+        <activity android:name=".Report.AddReport.WithdrawalReportActivity"/>
+        <activity android:name=".Report.AddReport.AssetDestructuinReportActivity"/>
+        <activity android:name=".Report.AddReport.ReceiverReportActivity"/>
+        <activity android:name=".Report.AddReport.RepairReportActivity"/>
+        <activity android:name=".Report.AddReport.RequestReportActivity"/>
+        <activity android:name=".Report.AddReport.DamageReportActivity"/>
+        <activity android:name=".Report.AddReport.MaintenanceReportActivity"/>
+        <activity android:name=".Report.AddReport.AssetDivisionReportActivity"/>
+        <activity android:name=".AddData.AddDataUser.AddRepairUserActivity"/>
+        <activity android:name=".Admin.ResponseDivisionActivity"/>
+        <activity android:name=".AddData.OtherAddData.WorkOrder"/>
+        <activity android:name=".ListData.AssetData.AssetOprationalActivity"/>
+
+
+
+        <activity android:name=".ListData.OtherData.RollingActivity"/>
+        <activity android:name=".ListData.OtherData.ViewRollingActivity"/>
+        <activity android:name=".AddData.OtherAddData.AddRollingActivity"/>
+        <activity android:name=".ChangeData.OtherEdit.EditRolling"/>
+
+        <activity android:name=".Notification.FCMActivity"/>
+        <activity android:name=".Notification.KotlinMainActivity"/>
+
+        <activity android:name=".Admin.AddRegisterAdmin" />
+        <activity android:name=".Account.AddRegisterUserActivity" />
+        <activity android:name=".Clinic.AddRegisterClinic"/>
+        <activity android:name=".Humas.AddRegisterHumas"/>
+        <activity android:name=".Laboratory.AddRegisterLab"/>
+        <activity android:name=".Manager.AddRegisterManager"/>
+        <activity android:name=".Logistic.AddRegisterLogistic"/>
+        <activity android:name=".Oprational.AddRegisterOprational"/>
+        <activity android:name=".Safety.AddRegisterK3L"/>
+        <activity android:name=".SDM.AddRegisterSDM"/>
+
+        <activity android:name=".User.HomeUserActivity" />
+        <activity android:name=".Admin.HomeAdminActivity" />
+
+        <activity android:name=".Logistic.SignInLogisticActivity"/>
+        <activity android:name=".Oprational.SignInOprationalActivity"/>
+        <activity android:name=".Manager.SignInManagerActivity"/>
+        <activity android:name=".Laboratory.SignInLabActivity"/>
+        <activity android:name=".Humas.SignInHumasActivity"/>
+        <activity android:name=".Clinic.SignInClinicActivity"/>
+        <activity android:name=".Safety.SignInSafetyActivity"/>
+        <activity android:name=".SDM.SignInComplaintActivity"/>
+
+        <activity android:name=".Logistic.ProfileLogisticActivity"/>
+        <activity android:name=".Oprational.ProfileOprationalActivity"/>
+        <activity android:name=".Safety.ProfileK3LActivity"/>
+        <activity android:name=".Manager.ProfileManagerActivity"/>
+        <activity android:name=".Laboratory.ProfileLabActivity"/>
+        <activity android:name=".Clinic.ProfileClinicActivity"/>
+        <activity android:name=".Humas.ProfileHumasActivity"/>
+        <activity android:name=".SDM.ProfileSDMActivity"/>
+
+        <activity android:name=".Logistic.UpdateProfileLogisticActivity"/>
+        <activity android:name=".SDM.UpdateProfileComplainActivity"/>
+        <activity android:name=".Safety.UpdateProfileK3LActivity"/>
+        <activity android:name=".Oprational.UpdateProfileOprationalActivity"/>
+        <activity android:name=".Manager.UpdateProfileManagerActivity"/>
+        <activity android:name=".Humas.UpdateProfileHumasActivity"/>
+        <activity android:name=".Laboratory.UpdateProfileLabActivity"/>
+        <activity android:name=".Clinic.UpdateProfileClinicActivity"/>
+
+        <activity android:name=".Logistic.DeleteAcountLogistic"/>
+        <activity android:name=".SDM.DeleteAcountComplaint"/>
+        <activity android:name=".Safety.DeleteAcountSafety"/>
+        <activity android:name=".Oprational.DeleteAcountOprational"/>
+        <activity android:name=".Manager.DeleteAcountManager"/>
+        <activity android:name=".Laboratory.DeleteAcountLaboratory"/>
+        <activity android:name=".Humas.DeleteAcountHumas"/>
+
+        <activity android:name=".ListData.OtherData.ComplaintActivity"/>
+        <activity android:name=".SDM.AddComplaintSDM"/>
+        <activity android:name=".Safety.AddComplaintsafety"/>
+        <activity android:name=".Oprational.AddComplaintOprational"/>
+        <activity android:name=".Logistic.AddComplaintLogistic"/>
+        <activity android:name=".Laboratory.AddComplaintLab"/>
+        <activity android:name=".Humas.AddComplaintHumas"/>
+        <activity android:name=".Clinic.AddComplaintClinic"/>
+
+        <activity android:name=".User.SettingOfficerActivity"/>
+        <activity android:name=".SDM.SettingSDMActivity"/>
+        <activity android:name=".Safety.SettingSafetyActivity"/>
+        <activity android:name=".Manager.SettingManagerActivity"/>
+        <activity android:name=".Oprational.SettingOprationalActivity"/>
+        <activity android:name=".Logistic.SettingLogisticActivity"/>
+        <activity android:name=".Laboratory.SettingLabActivity"/>
+        <activity android:name=".Humas.SettingHumasActivity"/>
+        <activity android:name=".Clinic.SettingClinicActivity"/>
+        <activity android:name=".Admin.SettingActivity"/>
+
+        <activity android:name=".ListData.OtherData.DamageLogistikActivity"/>
+        <activity android:name=".ChangeData.OtherEdit.EditDamageLogistic"/>
+        <activity android:name=".AddData.OtherAddData.AddDamageLogistic"/>
+        <activity android:name=".Report.ListReport.MainActivityDamageLogisticReport"/>
+        <activity android:name=".Report.penyerahan.UploadDamageLogisticReportActivity"/>
+
+        <activity android:name=".Admin.WithdrawalDivisionActivity"/>
+        <activity android:name=".ListData.Withdrawal.List.WithdrawalLabActivity"/>
+        <activity android:name=".ListData.Withdrawal.List.WithdrawalOprationalActivity"/>
+        <activity android:name=".ListData.Withdrawal.List.WithdrawalSafetyActivity"/>
+        <activity android:name=".ListData.Withdrawal.List.WithdrawalHumasActivity"/>
+        <activity android:name=".ListData.Withdrawal.List.WithdrawalSDMActivity"/>
+        <activity android:name=".Report.penerimaan.ViewAssetRepairReport"/>
+
+        <activity android:name=".ListData.OtherData.LoocationActivity"/>
+        <activity android:name=".AddData.OtherAddData.AddLocationAsset"/>
+        <activity android:name=".ChangeData.OtherEdit.EditLocation"/>
+        <activity android:name=".ListData.OtherData.LoocationViewActivity"/>
+
+
+
+
+
+        <activity android:name=".Admin.AllMenuActivity"/>
+
+        <activity android:name=".Report.penyerahan.UploadRepairUserReportActivity"/>
+        <activity android:name=".Report.penyerahan.UploadMantenanceUserReportActivity"/>
+        <activity android:name=".Report.penyerahan.UploadReceiverReportActivity"/>
+        <activity android:name=".Report.penyerahan.UploadAssetReportActivity"/>
+        <activity android:name=".Report.penyerahan.UploadDamageReportActivity"/>
+        <activity android:name=".Report.penyerahan.UploadDiscructionReportActivity"/>
+        <activity android:name=".Report.penyerahan.UploadRepairReportActivity"/>
+        <activity android:name=".Report.penyerahan.UploadRequestReportActivity"/>
+        <activity android:name=".Report.penyerahan.UploadTransferReportActivity"/>
+        <activity android:name=".Report.penyerahan.UploadMantenanceReportActivity"/>
+        <activity android:name=".Report.penyerahan.UploadWithReportActivity"/>
+        <activity android:name=".Report.penyerahan.UploadAssetDivisionReportActivity"/>
+
+        <activity android:name=".Admin.AssetDivision"/>
+
+        <activity android:name=".Notification.NotificationActivity"/>
+        <activity android:name=".ListData.OtherData.ViewCheckingActivity"/>
+        <activity android:name=".ListData.OtherData.WorkOrderActivity"/>
+        <activity android:name=".ListData.OtherData.CheckingActivity"/>
+        <activity android:name=".ListData.OtherData.ViewWorkOrderActivity"/>
+        <activity android:name=".AddData.OtherAddData.AddChecking"/>
+        <activity android:name=".ChangeData.OtherEdit.EditChecking"/>
+        <activity android:name=".ListData.OtherData.DesctructionActivity"/>
+        <activity android:name=".AddData.OtherAddData.AddDestruction"/>
+        <activity android:name=".ChangeData.OtherEdit.EditDescruction"/>
+
+
+
+        <activity android:name=".ListData.OtherData.OrderActivity"/>
+        <activity android:name=".AddData.OtherAddData.AddOrderAsset"/>
+        <activity android:name=".ChangeData.OtherEdit.EditOrder"/>
+
+        <activity android:name=".ListData.OtherData.PendingActivity"/>
+        <activity android:name=".AddData.OtherAddData.AddPendingAsset"/>
+        <activity android:name=".ChangeData.OtherEdit.EditPending"/>
+
+        <activity android:name=".Report.ViewReport.ViewReportAsset"/>
+
+
+        <activity android:name=".Report.ListReport.MainActivityAssetDivisioReport"/>
+        <activity android:name=".Report.ListReport.MainActivityAssetReport"/>
+        <activity android:name=".Report.ListReport.MainActivityAssetReceiverReport"/>
+        <activity android:name=".Report.ListReport.MainActivityAssetRepairReport"/>
+        <activity android:name=".Report.ListReport.MainActivityAssetRepairUserReport"/>
+        <activity android:name=".Report.ListReport.MainActivityAssetTransferReport"/>
+        <activity android:name=".Report.ListReport.MainActivityDamageAssetReport"/>
+        <activity android:name=".Report.ListReport.MainActivityDestructionAssetReport"/>
+        <activity android:name=".Report.ListReport.MainActivityMaintenanceReport"/>
+        <activity android:name=".Report.ListReport.MainActivityMaintenanceUserReport"/>
+        <activity android:name=".Report.ListReport.MainActivityRequestAssetReport"/>
+        <activity android:name=".Report.ListReport.MainActivityWithAssetReport"/>
+
+        <activity android:name=".Report.ReportDivision.ViewReportUser"/>
+        <activity android:name=".Report.penerimaan.ViewAssetDivisioReport"/>
+        <activity android:name=".Report.penerimaan.ViewAssetReceiverReport"/>
+        <activity android:name=".Report.penerimaan.ViewWithAssetReport"/>
+        <activity android:name=".Report.penerimaan.ViewRequestAssetReport"/>
+        <activity android:name=".Report.penerimaan.ViewMaintenanceReport"/>
+        <activity android:name=".Report.penerimaan.ViewDamageAssetReport"/>
+        <activity android:name=".Report.penerimaan.ViewAssetTransferReport"/>
+        <activity android:name=".Report.penerimaan.ViewAssetReport"/>
+        <activity android:name=".Report.penerimaan.ViewMaintenanceUserReport"/>
+        <activity android:name=".Report.penerimaan.ViewAssetRepairUserReport"/>
+        <activity android:name=".Report.penerimaan.ViewDestructionAssetReport"/>
+        <activity android:name=".Report.ReportDivision.OverallReport"/>
+
+        <activity android:name=".OtherMenu.Capture"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"/>
+        <activity android:name=".OtherMenu.ScanQRCodeActivity"/>
+
+        <activity
+            android:name=".OtherMenu.StartSecondActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyASlypROpdS6A8XhnhGjElXAP-exmThTlA" />
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+            <meta-data
+                android:name="com.google.mlkit.vision.DEPEDENCIES"
+                android:value="barcode" />
+        </provider>
+    </application>
+
+</manifest>
