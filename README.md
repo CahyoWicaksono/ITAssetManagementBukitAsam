@@ -1,1 +1,5 @@
-Sistem informasi manajemen perawata peralatan  adalah praktik pengelolaan asset di siklus penggunaanya. Nilai sebuah asset biasanya ditentukan secara kualitas. Saat sebuah organisasi menghabiskan waktu untuk mendapatkan melakukan pemeliharaan, waktu dan nilainya tepat dalam memprediksi apakah asset akan mengembalikan nilai penting. ini merupakan pencapaian terbesaar saya selama menempuh pendidikan  di universitas teknokrat indonesia, ini juga mengajarkan saya untuk memprioritaskan waktu sebaik mungkin dan tetap fokus pada tujuan saya
+IT asset management (also known as ITAM) is the process of ensuring an organization’s assets are accounted for, deployed, maintained, upgraded, and disposed of when the time comes. Put simply, it’s making sure that the valuable items, tangible and intangible, in your organization are tracked and being used.
+
+![alt text](https://github.com/CahyoWicaksono/ITAssetManagementBukitAsam/blob/main/Screenshot_2022-10-09-09-19-17-11_bc88992e2fa5b395c7b1565ad374e729.png?raw=true)
+
+![alt text](https://github.com/CahyoWicaksono/ITAssetManagementBukitAsam/blob/main/Screenshot_2022-10-09-09-19-22-91_bc88992e2fa5b395c7b1565ad374e729.png?raw=true)
